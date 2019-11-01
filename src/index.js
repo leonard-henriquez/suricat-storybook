@@ -1,5 +1,1 @@
-import Button from './components/Buttons'
-
-export default {
-  Button,
-}
+export { Buttons } from './components/Buttons'

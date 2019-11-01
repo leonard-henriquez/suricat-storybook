@@ -1,7 +1,5 @@
-import { PrimaryButton } from '.'
+export { PrimaryButton } from '.'
 
 export default {
   title: 'Button',
 }
-
-export { PrimaryButton }
