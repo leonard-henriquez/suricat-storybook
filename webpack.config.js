@@ -1,26 +1,28 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
 const packageJson = require('./package.json')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.ts',
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     library: packageJson.name,
     libraryTarget: 'umd',
+    globalObject: 'this',
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /(node_modules|bower_components)/,
-        use: 'babel-loader',
+        test: /\.(t|j)sx?$/,
+        exclude: /node_modules/,
+        loader: ['babel-loader', 'awesome-typescript-loader'],
+          },
+        ],
       },
-    ],
-  },
-  mode: 'development',
+  devtool: 'source-map',
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
   },
   externals: {
     react: {
