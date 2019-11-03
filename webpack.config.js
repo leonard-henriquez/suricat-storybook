@@ -17,9 +17,9 @@ module.exports = {
         test: /\.(t|j)sx?$/,
         exclude: /node_modules/,
         loader: ['babel-loader', 'awesome-typescript-loader'],
-          },
-        ],
       },
+    ],
+  },
   devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
