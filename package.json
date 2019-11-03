@@ -48,6 +48,7 @@
     "@storybook/react": "^5.2.4",
     "@types/react": "^16.9.3",
     "@types/react-dom": "^16.9.3",
+    "@types/styled-components": "^4.1.20",
     "@typescript-eslint/eslint-plugin": "^2.6.0",
     "@typescript-eslint/parser": "^2.6.0",
     "awesome-typescript-loader": "^5.2.1",
@@ -67,13 +68,15 @@
     "prettier": "^1.18.2",
     "react": "^16.9.3",
     "react-dom": "^16.9.3",
+    "styled-components": "^4.4.1",
     "typescript": "^3.6.4",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
   "peerDependencies": {
     "react": "^16.9.3",
-    "react-dom": "^16.9.3"
+    "react-dom": "^16.9.3",
+    "styled-components": "^4.4.1"
   },
   "dependencies": {}
 }
